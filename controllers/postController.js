@@ -1,4 +1,3 @@
-// controllers/postController.js
 const Post = require('../models/Post');
 const User = require('../models/User');
 
@@ -78,7 +77,7 @@ async function createPost(req, res) {
       const posts = await Post.findAll({
         include: [
           { model: User, as: 'author', attributes: ['id', 'username'] },
-          // ... outros includes necessários
+          
         ],
       });
   
@@ -131,5 +130,3 @@ async function unlikePost(req, res) {
 
 module.exports = { createPost, updatePost, deletePost, getPosts, likePost, unlikePost };
 
-// Implemente funções para criar, atualizar, deletar e buscar posts
-// Lembre-se de incluir a lógica para atualizar automaticamente a linha do tempo e o número de curtidas

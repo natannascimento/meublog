@@ -1,4 +1,3 @@
-// controllers/commentController.js
 const Post = require('../models/Post');
 const Comment = require('../models/Comment');
 const User = require('../models/User'); // Importe o modelo User se você não tiver feito isso ainda
