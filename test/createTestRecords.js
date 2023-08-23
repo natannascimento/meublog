@@ -2,7 +2,7 @@ const User = require('../models/User');
 const Post = require('../models/Post');
 const Comment = require('../models/Comment');
 const Like = require('../models/Like');
-const sequelize = require('../db/connection'); // Importe a instância do Sequelize
+const sequelize = require('../db/connection'); 
 
 // Função para criar registros de teste
 async function createTestRecords() {
